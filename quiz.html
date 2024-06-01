@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+</head>
+<body>
+<header>
+    <h1>Welcome to Quizbuzz</h1>
+    
+<div class="search bar">
+    <nav>
+        <a href="#">Mathematics-1</a>
+        <a href="#">Mathematics-2</a>
+        <a href="#">Mathematics-3</a>
+    </nav>
+</div>
+<div class="Categories">
+    <p>
+        Quiz Categories:
+        <select name="Quiz Categories" id="Quiz Categories">
+            <option value="">--Select Quiz Category--</option>
+            <option value="Mathematics-1">Mathematics-1</option>
+            <option value="Mathematics-2">Mathematics-2</option>
+            <option value="Mathematics-3">Mathematics-3</option>
+        </select>
+    </p>
+</div>
+</header>
+    <fieldset>
+        <legend>Difficulty Level</legend>
+        <div class="tabs">
+            <button class="tab-button" data-difficulty="easy">Easy</button>
+            <button class="tab-button" data-difficulty="medium">Medium</button>
+            <button class="tab-button" data-difficulty="hard">Hard</button>
+        </div>
+    </fieldset>
+    <div class="quiz-container">
+        <div id="quiz-content">
+            <!-- Quiz questions will be displayed here -->
+        </div>
+    
+    <div id="calculator">
+        <input type="text" id="calc-display" disabled>
+        <div class="calc-buttons">
+                <button class="calc-button">1</button>
+                <button class="calc-button">2</button>
+                <button class="calc-button">3</button>
+                <button class="calc-button">+</button>
+                <button class="calc-button">4</button>
+                <button class="calc-button">5</button>
+                <button class="calc-button">6</button>
+                <button class="calc-button">-</button>
+                <button class="calc-button">7</button>
+                <button class="calc-button">8</button>
+                <button class="calc-button">9</button>
+                <button class="calc-button">*</button>
+                <button class="calc-button">0</button>
+                <button class="calc-button">/</button>
+                <button class="calc-button">=</button>
+                <button class="calc-button">C</button>
+        </div>
+    </div>
+    <div id="timer">Time: <span id="time-elapsed">0</span>s</div>
+        </div>
+    <div id="progress bar">
+        <div id="progress"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
